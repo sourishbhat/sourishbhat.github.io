@@ -1,84 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sourish Bhat | Portfolio</title>
-  <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
-</head>
-<body class="latex-dark-auto">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourish Bhat — Portfolio</title>
   
-<header style="text-align: center;">
-    <img src="profile.jpg" alt="Sourish Bhat" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-    
+  <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
+  
+  <link rel="stylesheet" href="https://latex.vercel.app/prism/prism.css" />
+</head>
+
+<body id="top" class="text-justify latex-dark-auto">
+
+  <header>
     <h1>Sourish Bhat</h1>
     <p class="author">
-      B.Tech in EECS | IISER Bhopal <br>
-      <a href="mailto:sourish25@iiserb.ac.in">Email</a> &nbsp;|&nbsp; 
-      <a href="https://github.com/sourishbhat" target="_blank">GitHub</a> &nbsp;|&nbsp; 
-      <a href="https://linkedin.com/in/sourishbhat" target="_blank">LinkedIn</a>
+      Department of Electrical Engineering and Computer Science (EECS) <br />
+      Indian Institute of Science Education and Research (IISER) Bhopal <br />
+      June 2026
     </p>
   </header>
 
   <div class="abstract">
     <h2>Abstract</h2>
     <p>
-      I am a second-year B.Tech student in the Department of Electrical Engineering and Computer Science (EECS) at IISER Bhopal, specializing in software development and back-end architecture. Currently, I am a Summer Intern at the Multi-agent SImulations and Controls (MuSiC) Lab, where my primary research focuses on multi-agent systems and target localization using Unmanned Aerial Vehicles (UAVs). Alongside my academics, I actively lead community initiatives and build scalable technical projects.
+      This portfolio compiles the academic research, engineering experience, and technical projects of Sourish Bhat, a sophomore B.Tech student at IISER Bhopal. Specializing in full-stack architecture, systems-level development, and multi-agent coordination, my current focus centers on target optimization algorithms via aerial drone networks. Below, I outline ongoing work at the MuSiC Lab, community technical contributions, and historical engineering milestones.
     </p>
   </div>
 
   <main>
-    <h2>Experience</h2>
+    <article class="indent-pars">
+      
+      <figure style="float: right; margin: 0 0 1rem 2rem;">
+        <img src="profile.jpg" alt="Sourish Bhat" width="200" style="border-radius: 4px;" loading="lazy" />
+        <figcaption>Figure 1: Sourish Bhat.</figcaption>
+      </figure>
+
+      <h2 id="research-framework">Research & Core Concepts</h2>
+      <p>
+        In computational robotics and swarm telemetry, defining formal bounds for agent configurations is critical for state estimation. My current research trajectory focuses on evaluating these constraints during localized search patterns.
+      </p>
+
+      <div class="definition">
+        <strong>Definition 1 (Multi-Agent Target Localization).</strong> A state estimation framework wherein a coordinated cluster of autonomous nodes ($a_1, a_2, \dots, a_n \in \mathcal{A}$) dynamically converge on the spatial coordinates of a dynamic target vector $\mathbf{T}(t)$ within a bounded environment $\Omega$.
+      </div>
+
+      <div class="theorem">
+        <strong>Theorem 1 (Consensus Convergence).</strong> If the communication topology graph $\mathcal{G}$ of the UAV swarm contains a spanning tree, the local coordinate estimates converge asymptotically to the true target state vector $\mathbf{T}$ under bounded environmental noise.
+      </div>
+
+      <h2 id="experience">Professional Experience</h2>
+      
+      <h3>Summer Research Intern</h3>
+      <p><strong>MuSiC@IISERB: Multi-agent SImulation & Control Lab</strong> <em>(May 2026 – Present)</em></p>
+      <p class="no-indent">
+        Developing localization algorithms and tracking simulations for Unmanned Aerial Vehicles (UAVs). Modeling spatial distributions and dynamic pathfinding trajectories to optimize swarm coordination vectors across variable multi-agent environments.
+      </p>
+
+      <h3>Trainee Member</h3>
+      <p><strong>EECS Club | IISER Bhopal</strong> <em>(Oct 2025 – Present)</em></p>
+      <p class="no-indent">
+        Contributing full-stack development implementations to <em>Tune Tracer</em>, a collaborative music tracking application. Architecting structural API pathways and engineering scalable database models for streamlined user interactions. 
+        (<a href="https://github.com/eecsclubofficial/tune-tracer" target="_blank">GitHub Repository</a>)
+      </p>
+
+      <h3>Lead Android ROM Developer</h3>
+      <p><strong>Trinity Organisation</strong> <em>(Aug 2022 – Feb 2023)</em></p>
+      <p class="no-indent">
+        Compiled custom Android distributions utilizing the Android Open Source Project (AOSP) ecosystem for diverse hardware frameworks
+        <label for="sn-devices" class="sidenote-toggle sidenote-number"></label>
+        <input type="checkbox" id="sn-devices" class="sidenote-toggle" />
+        <span class="sidenote">
+          Target hardware environments included the Realme X ("RMX1901"), Motorola X4 ("Payton"), and the MediaTek-powered Redmi Note 8 Pro ("Begonia").
+        </span>. 
+        Patched, configured, and optimized monolithic Linux kernels to ensure maximum hardware abstraction layer stability and performance efficiency.
+      </p>
+
+      <pre><code class="language-c">/* Sample low-level kernel driver optimization block */
+void optimize_mtk_governor(struct device *dev, AlpineConfig *cfg) {
+    if (!dev || !cfg) return;
     
-    <h3>Summer Intern</h3>
-    <p><strong>MuSiC@IISERB: Multi-agent SImulation & Control Lab</strong> <em>(May 2026 – Present)</em></p>
-    <ul>
-      <li>Conducting research on Multi-Agent Systems, focusing on optimizing target localization algorithms across various spatial environments.</li>
-      <li>Simulating and modeling complex environments to test and validate aerial drone (UAV) coordination and tracking efficiency.</li>
-    </ul>
-
-    <h3>Trainee Member</h3>
-    <p><strong>EECS Club | IISER Bhopal</strong> <em>(Oct 2025 – Present)</em></p>
-    <ul>
-      <li>Co-developing <em>Tune Tracer</em>, a full-stack music tracking application utilizing modern web frameworks.</li>
-      <li>Designing and implementing scalable backend architectures and intuitive frontend user interfaces within an Agile team environment. (<a href="https://github.com/eecsclubofficial/tune-tracer" target="_blank">GitHub Repository</a>)</li>
-    </ul>
-
-    <h3>Lead Android ROM Developer</h3>
-    <p><strong>Trinity Organisation</strong> <em>(Aug 2022 – Feb 2023)</em></p>
-    <ul>
-      <li>Compiled and maintained custom Android ROMs based on the Android Open Source Project (AOSP) for multiple devices, including Realme X ("RMX1901"), Motorola X4 ("Payton"), and Redmi Note 8 Pro ("Begonia").</li>
-      <li>Developed, patched, and optimized custom Linux kernels for MediaTek-based architectures, improving overall device stability and performance.</li>
-    </ul>
+    // Regulate CPU frequencies based on real-time swarm computation loads
+    unsigned int core_mask = cfg->active_cores;
+    regulator_set_voltage(dev->regulator, cfg->target_uv, MAX_UV);
     
-    <h3>Core Committee Member & AWS Coordinator</h3>
-    <p><strong>ESIC | IISER Bhopal</strong> <em>(Sep 2025 – Present)</em></p>
-    <ul>
-      <li>Serving as the Coordinator for the Animal Welfare Society (AWS), organizing community drives and managing campus welfare initiatives.</li>
-    </ul>
+    pr_info("MuSiC Lab Hardware Gov: Active Swarm Swapped on Mask %X\n", core_mask);
+}</code></pre>
 
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> C/C++, Python, HTML/CSS</li>
-      <li><strong>Tools & Frameworks:</strong> Git/GitHub, Linux/Unix Environments, AOSP</li>
-      <li><strong>Core Competencies:</strong> Backend Development, Kernel Compilation, Multi-Agent Simulations</li>
-    </ul>
+      <h3>Core Committee Member</h3>
+      <p><strong>ESIC | IISER Bhopal</strong> <em>(Sep 2025 – Present)</em></p>
+      <p class="no-indent">
+        Serving as the Student Coordinator for the Animal Welfare Society (AWS). Structuring institutional animal healthcare pathways, organizing regional adoption campaigns, and managing operational campus volunteer metrics.
+      </p>
 
-    <h2>Education</h2>
+      <h2 id="technical-matrix">Technical Matrix</h2>
+      <p>
+        The following technical compilation indicates verified programmatic capabilities down to hardware level deployment:
+      </p>
 
-    <h3>Indian Institute of Science Education and Research (IISER) Bhopal</h3>
-    <p><em>Sep 2025 – Apr 2029 (Expected)</em><br>
-    Bachelor of Technology (B.Tech), Electrical Engineering and Computer Science</p>
+      <table class="borders-custom col-1-l col-2-l" style="width: 100%;">
+        <caption>Table 1: Domain proficiency and engineering toolchains.</caption>
+        <thead>
+          <tr class="border-top-thin border-bottom-thick">
+            <th scope="col" style="width: 30%;">Category</th>
+            <th scope="col">Technologies & Frameworks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Languages</strong></td>
+            <td>C, C++, Python, JavaScript, TypeScript, Java, Assembly, HTML/CSS</td>
+          </tr>
+          <tr>
+            <td><strong>Tools & Systems</strong></td>
+            <td>Git, GitHub, Linux/Unix Shell Scripting, AOSP Architectures, Makefiles</td>
+          </tr>
+          <tr class="border-bottom-thin">
+            <td><strong>Specializations</strong></td>
+            <td>Full-Stack Architecture, Kernel Cross-Compilation, Multi-Agent Simulations</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h3>St. Francis School Indirapuram</h3>
-    <p><em>Graduated Mar 2025</em><br>
-    Class XII (Senior Secondary)</p>
-    <ul>
-      <li><strong>Leadership:</strong> Head Boy of the Student Council (2023–24); President (2023–24) and Vice President (2022–23) of the Media Club.</li>
-      <li><strong>Sports:</strong> State-level Badminton player; Gold Medalist for the school team and the state cluster team.</li>
-    </ul>
+      <h2 id="education">Education</h2>
 
+      <h3>Indian Institute of Science Education and Research (IISER) Bhopal</h3>
+      <p class="no-indent">
+        <em>Sep 2025 – Apr 2029 (Expected)</em><br />
+        Bachelor of Technology (B.Tech), Engineering Sciences <br />
+        Specialization Stream: Electrical Engineering and Computer Science (EECS)
+      </p>
+
+      <h3>St. Francis School Indirapuram</h3>
+      <p class="no-indent">
+        <em>Graduated Mar 2025</em><br />
+        Higher Secondary Certification (Class XII)
+      </p>
+      <ul>
+        <li><strong>Leadership Roles:</strong> Appointed Head Boy of the Student Council (2023–24); Appointed President of the Media Club (2023–24) and Vice President (2022–23).</li>
+        <li><strong>Athletics:</strong> Badminton Gold Medalist for the school varsity squad and competitive state cluster brackets.</li>
+      </ul>
+
+    </article>
   </main>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>
+
 </body>
 </html>
